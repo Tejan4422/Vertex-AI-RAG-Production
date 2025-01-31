@@ -1,0 +1,9 @@
+functions-framework==3.*
+pandas
+openpyxl
+google-cloud-firestore
+google-cloud-bigquery
+google-cloud-storage
+torch==2.0.0
+torchvision==0.15.1
+sentence-transformers==2.2.2
