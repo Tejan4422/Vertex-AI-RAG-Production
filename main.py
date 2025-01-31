@@ -15,8 +15,8 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Initialize Firestore and BigQuery clients
 db = firestore.Client()
-client = bigquery.Client(project='veefin-ai-426106')  # Replace with your project ID
-dataset_id = 'veefin-ai-426106.rfp_data'
+client = bigquery.Client(project='')  # Replace with your project ID
+dataset_id = ''
 table_id = f'{dataset_id}.rfp_queries_responses_timestamps'
 
 # Initialize Cloud Storage client
@@ -30,7 +30,7 @@ def get_access_token():
 
 # Function to call the Discovery Engine API for a single query
 def call_discovery_engine(query_text, session_id=None):
-    url = "https://discoveryengine.googleapis.com/v1alpha/projects/994544669142/locations/global/collections/default_collection/engines/rfp-agent_1722488765661/servingConfigs/default_search:answer"
+    url = ""
     access_token = get_access_token()
     headers = {
         "Authorization": f"Bearer {access_token}",
